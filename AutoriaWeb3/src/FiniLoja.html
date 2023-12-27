@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+ <!--  na tag head importamos links do bootstrap, incluindo além do bootstrap,
+JavaScript e Css. Além disso, utilizamos uma fonte do google fonts onde importamos o seu link.    -->
+<title>INFO FINI</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	crossorigin="anonymous"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+	integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+	crossorigin="anonymous"></script>
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+	integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+	crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+	href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap"
+	rel="stylesheet">
+<link rel="stylesheet" href="BoloCss.css">
+<link rel="stylesheet" href="https://fonts.google.com/specimen/Rubik+Doodle+Shadow">
+</head>
+<body>
+<header style="background-color: #e83e8c">
+
+		<div class="menu">
+			<div class="left-side-menu">
+				<div class="logo">
+					<h2>INFO FINI</h2>
+
+				</div>
+
+				<nav>
+					<ul>
+						<li><a href="LojadeVendas.html">Home</a></li>
+						<li><a href="BoloLoja.html">Bolos</a></li>
+						<li><a href="FiniLoja.html">Bala Fini</a></li>
+					</ul>
+				</nav>
+				
+				 <!-- nessa tag nav que utilizamos do bootstrap criamos uma barra de pesquisa e fizemos o seu design.  -->
+								
+								<nav class="navbar navbar-dark bg-pink">
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+  </form>
+</nav>
+
+			
+
+
+			<div class="right-side-menu">
+				<a href=""><img src="imagens/carrinho.png"></a> <a href="Cadastro.html"
+					class="icon-avatar"><img src="imagens/Usuario.jpg"></a>
+
+			</div>
+
+		</div>
+	</header>
+	
+	<main>
+	<section>
+		
+				<br></br> <br></br>
+<!-- Nessa sessão adicionamos uma imagem para ilustrar nossa página, tornando-a mais atrativa. -->
+
+<img  alt="null" title="null" class="slashpdict-image ls-is-cached lazyloaded" src="https://www.finistore.com.br/dw/image/v2/BHBX_PRD/on/demandware.static/-/Library-Sites-FiniSharedLibrary/default/dw33ea9ff2/homepage/Banner_Categoria_FINI_1_0005_TUBES.png" style="width:100%;">
+		
+		
+
+
+
+
+
+		<br></br>
+
+
+	</section>
+	</main>
+	
+	<br></br>
+	<br></br>
+	<br></br>
+
+	
+	<!--  nessa div nomeada "Produtos" adicionamos imagens de Balas Fini e também adicionamos preços e botões de comprar
+	para as imagens e um contador para exibir a quantidade de itens a serem comprados além de separarmos ops produtos por
+	sessões através da div "line" que criou linhas para as sessões e adicionamos textos para diferenciar essas sessões. -->
+	
+	<div class="Produtos">
+	
+			<div class="line"></div>
+	
+		<fieldset>
+  <legend>Preços</legend>
+  <div>
+    <input
+      type="checkbox"
+      id="codificação"
+      name="interesse"
+      value="codificação" />
+    <label for="coding"> R$ 1,50 </label>
+  </div>
+  <div>
+    <input type="checkbox" id="música" name="interesse" value="música" />
+    <label for="music"> R$ 4,50 </label>
+    
+  </div>
+</fieldset>
+	
+		<h3>FINI</h3>
+		<div class="w-100">
+			<div class="row">
+				<div class="col">
+					<img src="fini.jpg">
+					<span>R$ 1,50</span>
+					<input type="number" min="1" id="QuantidadeNumero" value="1"  onkeydown="return false;" class="quantity-range">				
+				<a href="" class="button"><img src="imagens/carrinho.png">
+							Compre</a>
+				</div>
+				<div class="col">
+					<img src="FiniColorido.jpg">
+						<span>R$ 2,50</span>
+						<input type="number" min="1" id="QuantidadeNumero" value="1"  onkeydown="return false;" class="quantity-range">				
+							<a href="" class="button"><img src="imagens/carrinho.png">
+							Compre</a>			
+					
+				</div>
+				<div class="col">
+					<img src="FiniRoxo.jpg">
+						<span>R$ 3,50</span>
+						<input type="number" min="1" id="QuantidadeNumero" value="1"  onkeydown="return false;" class="quantity-range">				
+							<a href="" class="button"><img src="imagens/carrinho.png">
+							Compre</a>
+					
+				</div>
+				<div class="col">
+					<img src="FiniTutti.jpg">
+						<span>R$ 4,50</span>
+						<input type="number" min="1" id="QuantidadeNumero" value="1"  onkeydown="return false;" class="quantity-range">				
+						<a href="" class="button"><img src="imagens/carrinho.png">
+							Compre</a>
+					
+				</div>
+			</div>
+
+		</div>
+	</div>
+	
+		<div class="Produtos">
+		
+	
+		
+	
+		
+		<h3>FINI</h3>
+				<div class="line"></div>
+		
+		
+		
+		<div class="w-100">
+			<div class="row">
+				<div class="col">
+					<img src="fini.jpg">
+					
+					<span>R$ 1,50</span>
+					<input type="number" min="1" id="QuantidadeNumero" value="1"  onkeydown="return false;" class="quantity-range">				
+					<a href="" class="button"><img src="imagens/carrinho.png">
+							Compre</a>
+				</div>
+				<div class="col">
+					<img src="FiniColorido.jpg">
+					<span>R$ 2,50</span>
+										<input type="number" min="1" id="QuantidadeNumero" value="1"  onkeydown="return false;" class="quantity-range">				
+					<a href="" class="button"><img src="imagens/carrinho.png">
+							Compre</a>
+					
+				</div>
+				<div class="col">
+					<img src="FiniRoxo.jpg">
+					<span>R$ 3,50</span>
+										<input type="number" min="1" id="QuantidadeNumero" value="1"  onkeydown="return false;" class="quantity-range">				
+					<a href="" class="button"><img src="imagens/carrinho.png">
+							Compre</a>
+				</div>
+				<div class="col">
+					<img src="FiniTutti.jpg">
+					<span>R$ 4,50</span>
+										<input type="number" min="1" id="QuantidadeNumero" value="1"  onkeydown="return false;" class="quantity-range">				
+					<a href="" class="button"><img src="imagens/carrinho.png">
+							Compre</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	
+</body>
+</html>
