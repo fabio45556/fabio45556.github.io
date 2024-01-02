@@ -1,0 +1,225 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;		
+font-family: 'Rubik Doodle Shadow', sans-serif;
+
+	
+}
+	/*nessa tag * adicionamos a margem da página para zero e adicionamos o padding,
+	que é o espaçamento interno  para zero para as laterais e para cima e baixo,
+	utilizamos a tag box-sizing para redimensionar o tamanho da página onde definimos como
+	border-box para definir as dimensões da página pra as bordas do box  */
+
+header{
+display:flex;
+flex-direction:column;
+}
+
+
+
+/* na tag header definimos o display como flex para os componentes ao seu redor ficarem ao seu lado,
+e definimos na tag flex-direction que a função flex iria posicionar os componentes como colunas */
+
+.menu{
+display:flex;
+justify-content: space-between;
+align-items: center;
+padding:0 5%;	
+height:85px;
+}
+
+/* na tag menu adicionamos o display como flex, controlamos o alinhamento de todos os itens no eixo principal e 
+alinhamos os itens ao centro e alteramos a altura e o espaçamento interno(padding) */
+
+.left-side-menu{
+ display:flex;
+ gap:50px;		
+}
+
+/* posicionamos os componentes ao lado da página através da tag display:flex e adicionamos um espaço
+do texto info shop para o outro texto de 50px através da tag gap */
+
+
+nav ul li{
+display: inline-block;	
+
+	
+}
+
+	/*  nessa tag nav colocamos os links para os sites um ao lado do outro e */
+
+nav ul li a{
+text-decoration: none;
+
+	
+}
+
+	/* definimos para não ter decoração para o texto através da tag text-decoration */
+
+.right-side-menu{
+  display:flex;
+  align-items: center;
+  gap: 20px;
+	
+}
+
+	/* nessa tag right-side-menu fizemos os itens ficarem um ao lado do outro através da tag flex
+	e posicionamos ao centro os itens através da tag align-items: center e demos um espaço de um componente ao
+	outro de 20px pela tag gap. */
+
+.icon-avatar img{
+width:40px;	
+}
+
+	/* nessa tag icon-avatar img definimos a largura do icone de usuário para 40px; */
+	
+.line{
+	height:1px;
+	background-color:#e83e8c;
+	width: 100%;
+	align-self:center;
+	
+}
+
+	/* nessa tag line colocamos a altura de 1 px definimos uma cor de plano de fundo, uma largura de 100%, e alinhamos o próprio componente
+	ao centro pela tag align-self. */
+
+.container{
+display:flex;
+justify-content: center;
+align-items: center;
+width:100%;
+height:85px;
+gap:30px;
+}
+
+	/* nessa tag container colocamos os itens um ao lado do outro e posicionamos os itens no centro da página, 
+	definimos a largura da div container para 100%, a altura para 85px e o espaço entre os itens de 30px pela tag gap. */
+
+.left-side{
+display: flex;
+flex-direction:column;
+width:100%;
+}
+
+	/* na tag left-side definimos os itens para ficarem um ao lado do outro, definimos 
+	para os itens serem posicionados como colunas e adicionamos a largura da div left-side para 100%. */
+
+.items{
+align-self: flex-end;	
+}
+
+	/* na tag items alinhamos o próprio componente para extremidade do canto direito da página
+				 */
+	
+
+.select-image{
+max-width:400px;		
+}
+
+/* nessa tag select-image definimos para essa tag div ter um limite de largura de 400px; */
+
+.select-image img{
+	width:100%;
+	border-radius: 10px;
+}
+
+
+.right-side{
+	width:100%;
+	display:flex;
+	flex-direction:column;
+}
+
+
+	/* nessas tags select-image img e right-side definimos a largura do componente de 100% e definimos para ficarem um ao lado do outr
+	e posicionamos os itens como colunas */
+
+
+.right-side h6{
+   	color: orange;
+}
+
+.right-side p{
+	color:gray;
+	font-size:14px;
+}
+ 
+.Produtos{
+max-width:100%;
+}
+
+.Produtos img{
+	width:50%;
+	border-radius: 10px;	
+	
+}
+
+	/* nessas tags right-side h6, right-side p, produtos e produtos img definimos a largura, as cores, o tamanho da fonte
+	e ajustamos a borda dos componentes na tag produtos img para 10px. */
+
+.prices{
+display:flex;
+flex-direction:column;	
+	
+}
+
+.price{
+font-size:16px;
+font-weight: 700;	
+ text-decoration: line-through;
+	
+}
+
+.off{
+ font-size: 16px;
+ color: black;
+ font-weight: 700;	
+ 
+}
+
+.options{
+display:flex;	
+gap: 20px;
+}
+
+.qtd{
+display:flex;
+align-items: center;
+gap: 30px;
+background-color: #ccc;
+padding: 10px 20px;
+width:fit-content;
+border-radius:10px;
+}
+
+.amount span{
+font-weight: bold;
+font-size: 12px;	
+}
+
+.menos, .mais{
+cursor:pointer;	
+}
+
+.button{
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	background-color: orange;
+	padding: 10px 35px;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	width:fit-content;
+	gap: 5px;
+	font-size: 12px;
+	font-weight: 700px;
+}	
+
+
+
+	/* a partir da tag prices definimos para essas tags a fonte como negrito como na tag price, alinhamos os itens um ao lado do outro
+	e posicionamos por colunas, e por último fizemos o texto de preço ficar cortado com a tag price. além disso
+	na tag button colocamos para os itens ficarem um ao lado do outro*/
